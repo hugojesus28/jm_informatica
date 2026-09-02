@@ -1,0 +1,123 @@
+@import url('../variaveis.css');
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.modal-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  max-width: 500px;
+  width: 100%;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+
+    span.close{
+        font-size: 50px;
+        font-weight: bold;
+        color: var(--text-sem-destaque);
+        cursor: pointer;
+    }
+
+    h2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    span{
+        color: var(--primeira);
+    }
+    p{
+        font-size: 18px;
+        color: var(--text-sem-destaque);
+    }
+
+    #id-toggle {
+      color: var(--primeira);
+      font-weight: bold;
+      margin-left: 5px;
+  }
+
+  }
+  .modal-form{
+    button{
+        height: 30px;
+        width: 100%;
+        border-radius: 5px;
+        background-color: var(--primeira);
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 5px;
+        margin-block: 10px;
+        border: none;
+    }
+    .box-input{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-block: 10px;
+      label{
+        font-size: 18px;
+      }
+      input{
+        height: 30px;
+        border-radius: 5px;
+        padding-left: 10px;
+        border: 1px solid #0000001a;
+        &:focus{
+          outline: none;
+          border: 1px solid var(--segunda);
+          transition: 0.5s;
+        }
+      }
+    }
+
+    }
+
+    .acoes-modal{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        button{
+            height: 30px;
+            width: 100%;
+            border-radius: 5px;
+            background-color: #fff;
+            color: var(--primeira);
+            border: 1px solid var(--primeira);
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 5px;
+            margin-block: 10px;
+            
+
+        }
+        .valor-modal{
+        background-color: var(--primeira);
+        color: var(--text-padrao);
+        border: 1px solid white;
+
+    }
+    }
+   
+    
+  
+

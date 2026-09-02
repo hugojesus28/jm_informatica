@@ -1,0 +1,64 @@
+@import url('../variaveis.css');
+
+.container-cadastro-servico{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    h1{
+        font-size: 25px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .box-inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-block: 10px;
+        label{
+            font-size: 14px;
+        }
+        input{
+            height: 30px;
+            border-radius: 5px;
+            padding-left: 10px;
+            border: 1px solid #0000001a;
+            color: var(--text-sem-destaque);
+           
+            &:focus{
+                outline: none;
+                border: 1px solid var(--primeira);
+                transition: 0.5s;
+            }
+        }
+         input::placeholder {
+                color: var(--text-sem-destaque);
+                opacity: 1;
+            }
+    }
+    a{
+        text-decoration: none;
+        color: var(--primeira);
+        font-size: 14px;
+    
+        
+    }
+    button{
+        height: 30px;
+        width: 100%;
+        border-radius: 5px;
+        background-color: var(--primeira);
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 5px;
+        margin-block: 10px;
+        &:hover{
+            background-color: var(--segunda);
+            transition: 0.5s;
+        }
+    }
+}

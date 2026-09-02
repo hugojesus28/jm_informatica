@@ -1,0 +1,19 @@
+ :root{
+    --primeira: #3a9beb;
+    --segunda: rgb(163, 39, 221);
+    --fundo-pag: #fdfcfc;
+    --money-destaque: rgb(23, 165, 23);
+    
+    --fundo-msg-sucesso: rgb(29, 158, 29);
+    --fundo-msg-erro: rgb(197, 44, 44);
+
+    --box-shadow: 0px 0px 10px 1px #0000001a;
+    --text-padrao: #ffffff;
+    --elementos-sem-destaque: #c2bebe;
+    --text-destaque: #cf1b1b;
+    --text-sem-destaque: #d3cece;
+
+    --amarelo: rgb(214, 201, 20);
+    --verde: rgb(58, 173, 58);
+    --text-links: rgb(91, 91, 235);
+ }

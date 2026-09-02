@@ -1,0 +1,171 @@
+
+ 
+ * {
+padding: 0;
+margin: 0;
+border: 0;
+box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main{
+    display: flex;
+    min-height:100vh;
+    width: 100%;
+    background-color: var(--fundo-pag);
+
+    .container-cont{
+        width: 100%;
+        display: flex;
+       
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.mensagem-forms-erro{
+    color: rgb(253, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+aside{
+    width: 20%;
+    min-height: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    position: fixed;
+    left: 0;
+    
+    .perfil{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 14px;
+        padding: 5px;
+        color: #000000;
+        width: 100%;
+        h1{
+            text-align: center;
+        }
+        hr{
+            width: 100%;
+            height: 2px;
+            color: var(--elementos-sem-destaque);
+            background-color: var(--elementos-sem-destaque);
+            margin-block: 10px;
+        }
+        span{
+            width: 100%;
+            text-align: center;
+            color: var(--primeira);
+        }   
+    }
+
+    .navegacao{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            margin-block: 20px;
+
+            text-align: center;
+            li{
+                a{
+                    text-decoration: none;
+                    color: var(--primeira);
+                    font-size: 30px;
+                    padding: 10px;
+                    border-radius: 10px;
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        background-color: var(--primeira);
+                        color: var(--text-padrao);
+                    }
+                }
+            }
+        }
+    }
+    .logoff{
+        position: absolute;
+        bottom: 30px;
+        button{
+            border: none;
+            color: var(--primeira);
+            font-size: 20px;
+            font-weight: bold;
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 10px;
+            &:hover{
+                background-color: var(--primeira);
+                color: #fff;
+                transition: 0.5s;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+.mensagem-sucesso{
+    position: absolute;
+    background-color: var(--fundo-msg-sucesso);
+    bottom: 10px;
+    right: 10px;
+    padding: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+   
+}
+.mensagem-erro{
+    position: absolute;
+    background-color: var(--fundo-msg-erro);
+    bottom: 10px;
+    right: 10px;
+    padding: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+   
+}
+/* animação de entrada */
+.animacao {
+    animation: aparecer 0.5s ease forwards;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animação de Saída */
+.animacao.ocultar {
+    animation: desaparecer 0.5s ease forwards;
+}
+
+@keyframes desaparecer {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
